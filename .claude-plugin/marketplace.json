@@ -1,0 +1,7 @@
+{
+  "name": "pitch-night",
+  "owner": {"name": "ORBWEVA"},
+  "plugins": [
+    {"name":"pitch-night","source":{"source":"url","url":"https://github.com/ORBWEVA/pitch-night.git"},"description":"Prepare and rehearse a short (2-5 min) startup pitch for a cross-cultural, international-readiness audience — demo nights, pitch competitions, accelerator showcases where judges may not know your home market. Build a 3-minute pitch, make a local market legible to foreign judges, and rehearse against a clock and a scoring rubric.","version":"1.0.0","author":{"name":"ORBWEVA"}}
+  ]
+}
