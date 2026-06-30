@@ -6,13 +6,29 @@ This is not an investor deck. It's the 3 minutes you say out loud, written to ma
 
 ## Install
 
+> ⚠️ **The folder MUST end up inside `~/.claude/skills/`.** Claude Code only loads skills from there. If you clone it anywhere else (e.g. your home folder or Desktop), the skill will **not** appear and `/pitch-night:help` will do nothing.
+
+**Mac / Linux (Terminal):**
+
 ```bash
-git clone https://github.com/ORBWEVA/pitch-night ~/.claude/skills/pitch-night
+git clone https://github.com/ORBWEVA/pitch-night.git ~/.claude/skills/pitch-night
 ```
 
-Restart Claude Code, then run `/pitch-night:help`.
+**Windows (PowerShell):**
+
+```powershell
+git clone https://github.com/ORBWEVA/pitch-night.git $HOME\.claude\skills\pitch-night
+```
+
+Then **fully close and reopen Claude Code**, and run `/pitch-night:help`.
 
 (Or install the full ORBWEVA Academy pack: `curl -fsSL https://orbweva.com/install-skills.sh | bash`.)
+
+### Troubleshooting
+
+- **Cloned it to the wrong place?** Delete that copy and re-clone into the path above. On Windows, from your home folder (`cd ~`): `Remove-Item -Recurse -Force pitch-night` then re-run the clone command. On Mac/Linux: `rm -rf ~/pitch-night` then re-run.
+- **`git` not recognized (Windows)?** Install Git first: https://git-scm.com/download/win — then close and reopen PowerShell.
+- **Don't paste the URL on its own.** `git clone` must come first; pasting just the address makes the terminal try to run it as a program and fail.
 
 ## Commands
 
